@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import CoreData
+
 
 struct ContentView: View {
     @State var buttonName = "Start"
@@ -32,6 +32,7 @@ struct ContentView: View {
                 if buttonName != "Next" {
                  buttonName = "Next"
                 }
+                
                 switch currentLight{
                 case .red:
                     redLight = light
@@ -60,6 +61,7 @@ struct ContentView: View {
         }
     }
     @State var currentLight = CurrentLight.red
+    @State var number = 0
     let light: Double = 1.0
     let noLight: Double = 0.3
 }

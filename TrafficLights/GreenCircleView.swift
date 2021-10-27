@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GreenCircleView: View {
-   @State var alpha: Double
+    var alpha: Double
     
     var body: some View {
         ColorCircleView(color: .green, alpha: alpha)
